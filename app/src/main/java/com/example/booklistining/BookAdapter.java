@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -27,7 +28,7 @@ public class BookAdapter extends ArrayAdapter<Custom> {
             listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item,parent,false);
         }
         Custom currentBook = getItem(position);
-        TextView title = (TextView) listItemView.findViewById(R.id.title);
+        TextView title = listItemView.findViewById(R.id.title);
         title.setText(currentBook.getmTitle());
 
         return listItemView;

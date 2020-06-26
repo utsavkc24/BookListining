@@ -915,7 +915,8 @@ public class QueryUtils {
             for(int i = 0; i < itemsArray.length(); i++){
                 JSONObject currentBook = itemsArray.getJSONObject(i);
                 JSONObject volumeInfo = currentBook.getJSONObject("volumeInfo");
-
+                //JSONObject imageLinks = currentBook.getJSONObject("imageLinks");
+                //String bookImage = imageLinks.getString("thumbnail");
                 String title = volumeInfo.getString("title");
                 //String subTitle = volumeInfo.getString("subtitle");
 

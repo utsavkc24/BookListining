@@ -3,10 +3,7 @@ package com.example.booklistining;
 public class Custom {
     private String mTitle;
     private String mSubTitle;
-    public Custom(String title, String subTitle) {
-        this.mTitle = title;
-        this.mSubTitle = subTitle;
-    }
+    private int mImageId;
 
     public Custom(String title) {
         this.mTitle = title;
@@ -16,7 +13,4 @@ public class Custom {
         return mTitle;
     }
 
-    public String getmSubTitle() {
-        return mSubTitle;
-    }
 }
