@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">BookListining</string>
+    <string name="search_view_hint">Enter a book title</string>
+    <string name="search_hint">Type book name</string>
 </resources>

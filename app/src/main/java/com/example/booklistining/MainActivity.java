@@ -14,6 +14,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+    public static final String JSON_STRING="https://www.googleapis.com/books/v1/volumes?q=androidr";
+
 
 
     @Override
@@ -21,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ArrayList<Custom> books = QueryUtils.extractBookList();
+        ArrayList<Custom> books = QueryUtils.extractBookList(JSON_STRING);
 
         ListView bookListView = (ListView) findViewById(R.id.list);
 
